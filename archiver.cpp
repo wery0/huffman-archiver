@@ -6,7 +6,7 @@ void ConsoleHelp() {
                  "It maintains 3 following commands:\n"
                  "1). -c archive_name file1 [file2 ...] - archive files file1 [file2 ...] and save result in file archive_name.\n"
                  "2). -d archive_name - unzip files from archive archive_name and put to the current directory.\n"
-                 "3). -h - help.";
+                 "3). -h - help.\n";
 }
 
 void EncodeFiles(const std::string &archive_name, std::vector<std::string> &files) {
