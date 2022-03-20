@@ -1,5 +1,5 @@
 # haffman-archiver
-This archiver uses Huffman codes.
+This is CLI archiver, based on Huffman's coding.
 
 # How to use
 Archiver maintains the following comands:
