@@ -1,4 +1,4 @@
-# haffman-archiver
+# huffman-archiver
 This is CLI archiver, based on Huffman's coding.
 
 # How to use
