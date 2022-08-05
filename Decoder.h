@@ -1,8 +1,8 @@
 #include "BitReader.h"
 #include "BitWriter.h"
-#include "HaffmanTree.h"
+#include "HuffmanTree.h"
 
-namespace Haffman {
+namespace Huffman {
     class Decoder {
     public:
         void DecodeArchive(std::ifstream &istream);

@@ -4,7 +4,7 @@ project(HaffmanArchiver)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(
-        HaffmanArchiver
+        HuffmanArchiver
         archiver.cpp
         Decoder.h
         Decoder.cpp
@@ -14,7 +14,7 @@ add_executable(
         BitReader.cpp
         BitWriter.h
         BitWriter.cpp
-        HaffmanTree.h
-        HaffmanTree.cpp
+        HuffmanTree.h
+        HuffmanTree.cpp
         PriorityQueue.h
         PriorityQueue.cpp)

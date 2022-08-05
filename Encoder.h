@@ -2,12 +2,12 @@
 #include <bitset>
 #include "BitWriter.h"
 
-namespace Haffman {
+namespace Huffman {
 
     const size_t LETTER_SIZE = 9;
 
     using Letter = std::bitset<LETTER_SIZE>;
-    using HaffmanCode = std::vector<bool>;
+    using HuffmanCode = std::vector<bool>;
 
     const Letter FILENAME_END = 256;
     const Letter ONE_MORE_FILE = 257;
@@ -18,7 +18,7 @@ namespace Haffman {
 
         explicit Encoder(std::ofstream &stream);
 
-        static void MakeCanonicalHuffmanCodes(std::vector<std::pair<Haffman::Letter, Haffman::HaffmanCode>> &codes);
+        static void MakeCanonicalHuffmanCodes(std::vector<std::pair<Huffman::Letter, Huffman::HuffmanCode>> &codes);
 
         void EncodeFile(std::string file_name);
 
@@ -27,7 +27,7 @@ namespace Haffman {
     private:
         int32_t cnt_encoded_files = 0;
         BitWriter writer;
-        Haffman::HaffmanCode ONE_MORE_FILE_;
-        Haffman::HaffmanCode ARCHIVE_END_;
+        Huffman::HuffmanCode ONE_MORE_FILE_;
+        Huffman::HuffmanCode ARCHIVE_END_;
     };
 }

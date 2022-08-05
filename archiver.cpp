@@ -3,7 +3,7 @@
 #include <ctime>
 
 void ConsoleHelp() {
-    std::cout << "Hello! This is Haffman archiver.\n"
+    std::cout << "Hello! This is Huffman archiver.\n"
                  "It maintains 3 following commands:\n"
                  "1). -c archive_name file1 [file2 ...] - archive files file1 [file2 ...] and save result in file archive_name.\n"
                  "2). -d archive_name - unzip files from archive archive_name and put to the current directory.\n"
@@ -12,7 +12,7 @@ void ConsoleHelp() {
 
 void EncodeFiles(const std::string &archive_name, std::vector<std::string> &files) {
     std::ofstream ostream = std::ofstream(archive_name, std::ios::binary);
-    Haffman::Encoder encoder(ostream);
+    Huffman::Encoder encoder(ostream);
     for (const auto &file_name: files) {
         encoder.EncodeFile(file_name);
     }
@@ -25,7 +25,7 @@ void DecodeArchive(const std::string &archive_name) {
     if (!istream) {
         throw std::invalid_argument("No such file " + archive_name);
     }
-    Haffman::Decoder decoder;
+    Huffman::Decoder decoder;
     decoder.DecodeArchive(istream);
 }
 

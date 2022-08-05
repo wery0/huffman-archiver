@@ -1,7 +1,7 @@
+#include "HuffmanTree.h"
 #include <vector>
-#include "HaffmanTree.h"
 
-using Key = std::pair<size_t, Haffman::HaffmanTree *>;
+using Key = std::pair<size_t, Huffman::HuffmanTree *>;
 
 class PriorityQueue {
 public:
