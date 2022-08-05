@@ -1,5 +1,6 @@
 #include "Encoder.h"
 #include "Decoder.h"
+#include <ctime>
 
 void ConsoleHelp() {
     std::cout << "Hello! This is Haffman archiver.\n"
